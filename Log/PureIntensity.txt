@@ -1,0 +1,3 @@
+# Pure Elements Intensity, Selected Method=1 
+Ni = 0.000000 
+Fe = 0.000000 

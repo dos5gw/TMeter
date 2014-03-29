@@ -1,0 +1,17 @@
+SampleID=Ni
+NumberOfLayers=1
+LayerDensity=8.90
+LayerThickness=0.00
+LayerCalculationFlag=2
+NumberOfConstituents=1
+ConstituentFormula=Ni
+ConstituentLayerNumber=1
+ConstituentConcentration=100.00
+ConstituentConcentrationUnit=1
+ConstituentCalculationFlag=2
+AnalyteAtomicNumber=28
+AnalyteLine=1
+AnalyteConditionCode=1
+AnalyteIntensity=1.00
+AnalyteBlank=0.00
+ElementConcentration=0.00

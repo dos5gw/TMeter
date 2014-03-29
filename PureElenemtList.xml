@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Element>
+  <Method NO="2" />
+  <Elem Name="Ag" Left="152" Right="241" />
+  <Elem Name="Cu" Left="51" Right="101" />
+  <Elem Name="Fe" Left="41" Right="88" />
+  <Elem Name="Ni" Left="40" Right="110" />
+  <Elem Name="Zn" Left="40" Right="110" />
+</Element>

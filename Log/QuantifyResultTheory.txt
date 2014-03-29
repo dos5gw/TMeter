@@ -1,0 +1,17 @@
+SampleID=Result
+NumberOfLayers=2
+LayerDensity=8.80,7.90
+LayerThickness=0.00,0.00
+LayerCalculationFlag=1,2
+NumberOfConstituents=2
+ConstituentFormula=Ni,Fe
+ConstituentLayerNumber=1,2
+ConstituentConcentration=100.00,100.00
+ConstituentConcentrationUnit=1,1
+ConstituentCalculationFlag=2,2
+AnalyteAtomicNumber=28,26
+AnalyteLine=1,1
+AnalyteConditionCode=1,1
+AnalyteIntensity=0.00,0.00
+AnalyteBlank=0.00,0.00
+ElementConcentration=0.00,0.00

@@ -1,0 +1,8 @@
+TargetAtomicNumber=74
+XrayTargetTakeOffAngle=20.000000
+TubeVoltage=39.000000
+TubeWindowThickness=5.200000
+XrayIncidentAngle=90.000000
+XrayEmergentAngle=45.000000
+PrimaryFilterAtomicNumber=0
+PrimaryFilterThickness=0.000000

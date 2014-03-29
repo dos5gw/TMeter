@@ -1,0 +1,17 @@
+SampleID=Fe
+NumberOfLayers=1
+LayerDensity=7.87
+LayerThickness=0.00
+LayerCalculationFlag=2
+NumberOfConstituents=1
+ConstituentFormula=Fe
+ConstituentLayerNumber=1
+ConstituentConcentration=100.00
+ConstituentConcentrationUnit=1
+ConstituentCalculationFlag=2
+AnalyteAtomicNumber=26
+AnalyteLine=1
+AnalyteConditionCode=1
+AnalyteIntensity=1.00
+AnalyteBlank=0.00
+ElementConcentration=0.00

@@ -1,0 +1,1672 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TMeter.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\TMeter.ico"
+IDR_TMETERTYPE          ICON    DISCARDABLE     "res\\TMeterDoc.ico"
+IDI_STOP                ICON    DISCARDABLE     "res\\ico00002.ico"
+IDI_START               ICON    DISCARDABLE     "res\\ico00001.ico"
+IDI_MOVEL               ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_MOVER               ICON    DISCARDABLE     "res\\icon2.ico"
+IDI_SWITCHWZ            ICON    DISCARDABLE     "res\\ico00003.ico"
+IDI_OPENWZ              ICON    DISCARDABLE     "res\\ico00004.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_MDIFRAME_TYPE       BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDR_MDISPECTRUM_TYPE    BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+IDR_MDICALIB_TYPE       BITMAP  DISCARDABLE     "res\\bmp00002.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  38, 38
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MDIFRAME_TYPE TOOLBAR DISCARDABLE  38, 38
+BEGIN
+    BUTTON      ID_MENU_SAVEVIDEO
+    BUTTON      ID_MENU_OPENSPECVIEW
+    BUTTON      ID_MENU_AUTOSORT
+END
+
+IDR_MDISPECTRUM_TYPE TOOLBAR DISCARDABLE  38, 38
+BEGIN
+    BUTTON      ID_MENU_OPENSPEC
+    BUTTON      ID_MENU_SAVESPEC
+    SEPARATOR
+    BUTTON      ID_MENU_PERIODICTABLE
+    BUTTON      ID_MENU_SETLINE
+    BUTTON      ID_MENU_AUTOSCALE
+    BUTTON      ID_MENU_XEXTEND
+    BUTTON      ID_MENU_XCONTRACT
+    BUTTON      ID_MENU_YEXTEND
+    BUTTON      ID_MENU_YCONTRACT
+    SEPARATOR
+    BUTTON      ID_MENU_FILL
+    BUTTON      ID_MENU_EXITSPEC
+END
+
+IDR_MDICALIB_TYPE TOOLBAR DISCARDABLE  38, 38
+BEGIN
+    BUTTON      ID_MENU_CALIB_LOAD
+    BUTTON      ID_MENU_CALIB_REDO
+    BUTTON      ID_MENU_CALIB_SKIP
+    SEPARATOR
+    BUTTON      ID_MENU_QUITCALIB
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 TMeter(&A)...",          ID_APP_ABOUT
+    END
+END
+
+IDR_TMETERTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "关闭(&C)",                    ID_FILE_CLOSE
+        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",            ID_EDIT_PASTE
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "窗口(&W)"
+    BEGIN
+        MENUITEM "新建窗口(&N)",                ID_WINDOW_NEW
+        MENUITEM "层叠(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "平铺(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "排列图标(&A)",                ID_WINDOW_ARRANGE
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 TMeter(&A)...",          ID_APP_ABOUT
+    END
+END
+
+IDR_MDIFRAME_TYPE MENU DISCARDABLE 
+BEGIN
+    POPUP "图像"
+    BEGIN
+        MENUITEM "开启摄像头",                  ID_MENU_OPENVIDEO
+        MENUITEM "关闭摄像头",                  ID_MENU_CLOSEVIDEO
+        MENUITEM "放大影像",                    ID_MENU_ZOOMVIDEO
+        MENUITEM "存储影像",                    ID_MENU_SAVEVIDEO
+    END
+    POPUP "工作曲线"
+    BEGIN
+        MENUITEM "切换当前曲线",                ID_MENU_SWITCHWZ
+        MENUITEM SEPARATOR
+        MENUITEM "新建曲线(New)",               ID_MENU_CREATEWZ
+        MENUITEM "修改工作曲线",                ID_MENU_OPENWZ
+        MENUITEM "删除曲线",                    ID_MENU_DELWZ
+    END
+    POPUP "调校"
+    BEGIN
+        POPUP "新建Def.MA"
+        BEGIN
+            MENUITEM "材料分析",                    ID_MENU_MATERIAL
+            MENUITEM "厚度模式(*)",                 ID_MENU_THICK
+        END
+        MENUITEM "修改Def.MA",                  ID_MENU_OPENDEFMA
+        MENUITEM "删除Def.MA",                  ID_MENU_DELDEFMA
+        MENUITEM "复制Def.MA",                  ID_MENU_CPDEFMA
+        MENUITEM SEPARATOR
+        MENUITEM "归一化",                      ID_MENU_NORMALIZE
+        MENUITEM "调校(需要标样片)",            ID_MENU_CORRECT
+        MENUITEM "基材校正",                    ID_MENU_CORRECTBASE
+        MENUITEM SEPARATOR
+        MENUITEM "编辑标样片",                  ID_MENU_CORRECTSTD
+    END
+    POPUP "测量"
+    BEGIN
+        MENUITEM "自动分组",                    ID_MENU_AUTOSORT, CHECKED
+        MENUITEM "单一分组计算结果",            ID_MENU_CALCAVG
+        MENUITEM "所有分组计算结果",            ID_MENU_CALCSIGL
+        MENUITEM SEPARATOR
+        MENUITEM "删除测量值",                  ID_MENU_DELRST
+        MENUITEM "删除所有测量值",              ID_MENU_DELRSTALL
+    END
+    POPUP "光谱"
+    BEGIN
+        MENUITEM "光谱分析",                    ID_MENU_OPENSPECVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "载入光谱数据",                ID_MENU_OPENSPEC
+        MENUITEM "保存光谱数据",                ID_MENU_SAVESPEC
+        MENUITEM "自动保存",                    ID_MENU_AUTOSAVE, CHECKED
+    END
+    POPUP "仪器设置"
+    BEGIN
+        MENUITEM "状态监控",                    ID_MENU_DAEMON
+        MENUITEM "稳定性测试",                  ID_MENU_STB
+        MENUITEM SEPARATOR
+        MENUITEM "开启高压电源",                ID_MENU_OPENTUBE
+        MENUITEM "关闭高压电源",                ID_MENU_CLOSETUBE
+        MENUITEM "待机",                        ID_MENU_STDBY
+        MENUITEM SEPARATOR
+        MENUITEM "能量刻度校准",                ID_MENU_ENERGY_CALIB
+        POPUP "测量参数"
+        BEGIN
+            MENUITEM "测量头参数",                  ID_MENU_PARAM
+            MENUITEM "X-Y-Z轴参数",                 ID_MENU_XYZ
+            MENUITEM "十字线/准直器",               ID_MENU_CROSS
+        END
+        MENUITEM "Functions Test",              ID_MENU_PUREELEMENT
+    END
+END
+
+IDR_MDISPECTRUM_TYPE MENU DISCARDABLE 
+BEGIN
+    POPUP "光谱"
+    BEGIN
+        MENUITEM "打开",                        ID_MENU_OPENSPEC
+        MENUITEM "保存",                        ID_MENU_SAVESPEC
+        MENUITEM SEPARATOR
+        MENUITEM "关闭光谱",                    ID_MENU_CLOSESPEC
+        MENUITEM "关闭所有光谱",                ID_MENU_CLOSEALLSPEC
+        MENUITEM SEPARATOR
+        MENUITEM "退出",                        ID_MENU_EXITSPEC
+    END
+    POPUP "图像"
+    BEGIN
+        MENUITEM "开启摄像头",                  ID_MENU_OPENVIDEO
+        MENUITEM "关闭摄像头",                  ID_MENU_CLOSEVIDEO
+    END
+    POPUP "刻度"
+    BEGIN
+        MENUITEM "自动调节",                    ID_MENU_AUTOSCALE
+        MENUITEM "手动调节",                    ID_MENU_USERSCALE
+        MENUITEM SEPARATOR
+        MENUITEM "X轴+",                        ID_MENU_XEXTEND
+        MENUITEM "X轴-",                        ID_MENU_XCONTRACT
+        MENUITEM "Y轴+",                        ID_MENU_YEXTEND
+        MENUITEM "Y轴-",                        ID_MENU_YCONTRACT
+    END
+    POPUP "检视"
+    BEGIN
+        MENUITEM "填充",                        ID_MENU_FILL, CHECKED
+        MENUITEM "设定感应区",                  ID_MENU_SETLINE
+        MENUITEM SEPARATOR
+        MENUITEM "元素",                        ID_MENU_ELEMENT
+        MENUITEM SEPARATOR
+        MENUITEM "产品中的元素",                ID_MENU_WZELEMENT
+        MENUITEM "元素周期表",                  ID_MENU_PERIODICTABLE
+        MENUITEM "测量参数",                    ID_MENU_MEASUREPARAM
+    END
+END
+
+IDR_MDICALIB_TYPE MENU DISCARDABLE 
+BEGIN
+    POPUP "文件"
+    BEGIN
+        MENUITEM "退出",                        ID_MENU_QUITCALIB
+    END
+    POPUP "图像"
+    BEGIN
+        MENUITEM "开启摄像头",                  ID_MENU_OPENVIDEO
+        MENUITEM "关闭摄像头",                  ID_MENU_CLOSEVIDEO
+    END
+    POPUP "测量"
+    BEGIN
+        MENUITEM "重新测量(前一个)",            ID_MENU_CALIB_REDO
+        MENUITEM "略过",                        ID_MENU_CALIB_SKIP
+        MENUITEM "读取光谱文件",                ID_MENU_CALIB_LOAD
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 TMeter"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "TMeter 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2012",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MDIMEASUREVIEW_ZH DIALOGEX 0, 0, 344, 225
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 11, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "开始测量",IDC_BTN_START,229,190,39,21,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "终止测量",IDC_BTN_STOP,286,190,39,21,0,WS_EX_STATICEDGE
+    CONTROL         "",IDC_VIDEO,"Static",SS_GRAYFRAME,228,48,93,92
+    PUSHBUTTON      "详细",IDC_OPENWZ,279,12,44,27
+    CONTROL         "工作曲线编号:",IDC_WZTITLE,"Button",BS_OWNERDRAW | 
+                    BS_LEFT | BS_FLAT | WS_TABSTOP,73,12,194,27,
+                    WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "切换",IDC_SWITCHWZ,17,12,44,27
+    LTEXT           "Result",IDC_LASTRESULT,230,154,91,19
+    CONTROL         "List1",IDC_STATISTIC_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,25,48,184,78
+    CONTROL         "List1",IDC_ARRAY_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,25,131,184,78
+END
+
+IDD_SPECTRUMDLG DIALOG DISCARDABLE  0, 0, 285, 188
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Spectrum Analysis"
+FONT 10, "System"
+BEGIN
+    CONTROL         "",IDC_SPECALZ,"Static",SS_GRAYFRAME,7,7,271,174
+END
+
+IDD_CONDITIONMONITORDLG DIALOG DISCARDABLE  0, 0, 351, 180
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "参数调整"
+FONT 11, "宋体"
+BEGIN
+    GROUPBOX        "状态监控",IDC_STATIC,11,11,156,153
+    GROUPBOX        "参数设置",IDC_STATIC,173,11,168,121
+    LTEXT           "管压kV",IDC_STATIC,18,30,32,11
+    LTEXT           "管流mA",IDC_STATIC,18,49,32,11
+    LTEXT           "基准电压",IDC_STATIC,18,68,32,11
+    LTEXT           "H2500",IDC_STATIC,18,87,32,11
+    LTEXT           "温度#1",IDC_STATIC,18,106,32,11
+    LTEXT           "温度#2",IDC_STATIC,18,125,32,11
+    LTEXT           "Static",IDC_HV_STATIC,56,30,27,11,SS_SUNKEN
+    LTEXT           "Static",IDC_MA_STATIC,56,49,27,11,SS_SUNKEN
+    LTEXT           "Static",IDC_STD_STATIC,56,68,27,11,SS_SUNKEN
+    LTEXT           "Static",IDC_H2500_STATIC,56,87,27,11,SS_SUNKEN
+    LTEXT           "Static",IDC_TEMP1_STATIC,56,106,27,11,SS_SUNKEN
+    LTEXT           "Static",IDC_TEMP2_STATIC,56,125,27,11,SS_SUNKEN
+    LTEXT           "VOL24",IDC_STATIC,105,31,22,10
+    LTEXT           "VOL12",IDC_STATIC,105,50,22,10
+    LTEXT           "VOL5",IDC_STATIC,105,69,22,10
+    LTEXT           "角度",IDC_STATIC,105,88,22,10
+    LTEXT           "Static",IDC_STATIC,131,30,27,11,SS_SUNKEN
+    LTEXT           "Static",IDC_STATIC,131,49,27,11,SS_SUNKEN
+    LTEXT           "Static",IDC_STATIC,131,68,27,11,SS_SUNKEN
+    LTEXT           "Static",IDC_STATIC,131,87,27,11,SS_SUNKEN
+    RTEXT           "采样时间",IDC_STATIC,181,57,37,10
+    RTEXT           "管压设定",IDC_STATIC,181,76,37,10
+    RTEXT           "管流设定",IDC_STATIC,181,95,37,10
+    RTEXT           "H2500设定",IDC_STATIC,182,113,37,10
+    RTEXT           "温度上限",IDC_STATIC,265,76,33,10
+    RTEXT           "温度下限",IDC_STATIC,265,95,33,10
+    PUSHBUTTON      "设定参数",IDC_SETPARAM,274,110,37,14,BS_FLAT
+    EDITTEXT        IDC_SETTIME,222,55,23,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SETHV,222,74,23,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SETMA,222,93,23,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SET2500,222,111,23,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_UTEMP,302,74,23,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LTEMP,302,93,23,12,ES_AUTOHSCROLL
+    LTEXT           "x10秒",IDC_STATIC,248,57,23,10
+    PUSHBUTTON      "开启高压",IDC_OPENTUBE,183,136,37,11
+    PUSHBUTTON      "关闭高压",IDC_CLOSETUBE,183,152,37,11
+    PUSHBUTTON      "打开光闸",IDC_OPENSHUT,240,136,37,11
+    PUSHBUTTON      "关闭光闸",IDC_CLOSESHUT,240,152,37,11
+    PUSHBUTTON      "打开照明",IDC_OPENLAMP,297,136,37,11
+    PUSHBUTTON      "关闭照明",IDC_CLOSELAMP,297,152,37,11
+    RTEXT           "顶线设定",IDC_STATIC,184,33,34,10
+    RTEXT           "基线设定",IDC_STATIC,265,33,34,10
+    EDITTEXT        IDC_SETTOPLINE,222,31,23,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_SETBASELINE,302,31,23,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    GROUPBOX        "Times",IDC_STATIC,178,21,158,29
+END
+
+IDD_MDISPECTRUMVIEW_ZH DIALOGEX 0, 0, 344, 225
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 11, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_CHANNELS,21,196,32,11
+    CONTROL         "Spin1",IDC_CHANNEL_SPIN,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,53,196,9,11
+    CTEXT           "",IDC_CHS_STATIC,72,190,147,23,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "",IDC_ALL_STATIC,172,193,60,16,SS_SUNKEN | NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "",IDC_MOVELEFT,20,176,17,8
+    PUSHBUTTON      "",IDC_MOVERIGHT,206,176,17,8
+    PUSHBUTTON      "开始采谱",IDC_BTN_MEASURE,241,190,40,17,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "连续采谱",IDC_BTN_STB,290,190,40,17,0,WS_EX_STATICEDGE
+    CONTROL         "",IDC_SPECTRUMEX,"Static",SS_GRAYFRAME | SS_NOTIFY,20,
+                    48,203,126,WS_EX_CLIENTEDGE
+    CONTROL         "List1",IDC_COLOUR_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_NOCOLUMNHEADER | WS_TABSTOP,20,16,203,20,
+                    WS_EX_CLIENTEDGE
+END
+
+IDD_SETZONE DIALOG DISCARDABLE  0, 0, 128, 80
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "感应区设置"
+FONT 10, "宋体"
+BEGIN
+    EDITTEXT        IDC_BASE,65,19,34,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_BASESPIN,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,99,18,6,14
+    EDITTEXT        IDC_TOP,65,48,34,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_TOPSPIN,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,99,47,6,14
+    LTEXT           "基线位置:",IDC_STATIC,24,20,35,13
+    LTEXT           "顶线位置:",IDC_STATIC,24,49,35,13
+END
+
+IDD_STBTESTDLG DIALOG DISCARDABLE  0, 0, 359, 256
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "稳定性测试"
+FONT 10, "宋体"
+BEGIN
+    PUSHBUTTON      "Start",IDC_STARTSTB,15,9,23,13
+    PUSHBUTTON      "Stop",IDC_STOPSTB,43,9,23,13,WS_DISABLED
+    CONTROL         "Progress1",IDC_STBPROGRESS,"msctls_progress32",
+                    WS_BORDER,223,10,121,9
+    CONTROL         "List1",IDC_STBREPORT,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,16,25,326,208
+    LTEXT           "测试次数:",IDC_STATIC,72,10,34,8
+    LTEXT           "单次时长:",IDC_STATIC,139,10,34,8
+    EDITTEXT        IDC_TESTTIME,109,8,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SAMPLETIME,174,8,22,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "x10s",IDC_STATIC,198,10,19,8
+    PUSHBUTTON      "清空",IDC_CLEANLIST,18,238,29,11
+    PUSHBUTTON      "保存",IDC_SAVELIST,53,238,29,11
+    PUSHBUTTON      "载入",IDC_LOADLIST,88,238,29,11
+END
+
+IDD_PERIODICTABLEDLG DIALOG DISCARDABLE  0, 0, 323, 195
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "元素周期表"
+FONT 10, "宋体"
+BEGIN
+    PUSHBUTTON      "1 H",IDC_ELE01,17,11,16,20,BS_MULTILINE
+    PUSHBUTTON      "3  Li",IDC_ELE03,17,31,16,20,BS_MULTILINE
+    PUSHBUTTON      "11 Na",IDC_ELE11,17,51,16,20,BS_MULTILINE
+    PUSHBUTTON      "19  K",IDC_ELE19,17,71,16,20,BS_MULTILINE
+    PUSHBUTTON      "37 Rb",IDC_ELE37,17,91,16,20,BS_MULTILINE
+    PUSHBUTTON      "55 Cs",IDC_ELE55,17,111,16,20,BS_MULTILINE
+    PUSHBUTTON      "87 Fr",IDC_ELE87,17,131,16,20,BS_MULTILINE
+    PUSHBUTTON      "57 La",IDC_ELE57,17,163,16,20,BS_MULTILINE
+    PUSHBUTTON      "4  Pe",IDC_ELE04,33,31,16,20,BS_MULTILINE
+    PUSHBUTTON      "12Mg",IDC_ELE12,33,51,16,20,BS_MULTILINE
+    PUSHBUTTON      "20 Ca",IDC_ELE20,33,71,16,20,BS_MULTILINE
+    PUSHBUTTON      "38 Sr",IDC_ELE38,33,91,16,20,BS_MULTILINE
+    PUSHBUTTON      "56 Ba",IDC_ELE56,33,111,16,20,BS_MULTILINE
+    PUSHBUTTON      "88 Ra",IDC_ELE88,33,131,16,20,BS_MULTILINE
+    PUSHBUTTON      "21 Sc",IDC_ELE21,49,71,16,20,BS_MULTILINE
+    PUSHBUTTON      "39 Y",IDC_ELE39,49,91,16,20,BS_MULTILINE
+    PUSHBUTTON      "镧系",IDC_LANTHANIDE,49,111,16,20,BS_MULTILINE | 
+                    WS_DISABLED
+    PUSHBUTTON      "89 Ac",IDC_ELE89,49,131,16,20,BS_MULTILINE
+    PUSHBUTTON      "22 Ti",IDC_ELE22,65,71,16,20,BS_MULTILINE
+    PUSHBUTTON      "23  V",IDC_ELE23,81,71,16,20,BS_MULTILINE
+    PUSHBUTTON      "24 Cr",IDC_ELE24,97,71,16,20,BS_MULTILINE
+    PUSHBUTTON      "25 Mn",IDC_ELE25,113,71,16,20,BS_MULTILINE
+    PUSHBUTTON      "26 Fe",IDC_ELE26,129,71,16,20,BS_MULTILINE
+    PUSHBUTTON      "27 Co",IDC_ELE27,145,71,16,20,BS_MULTILINE
+    PUSHBUTTON      "28 Ni",IDC_ELE28,161,71,16,20,BS_MULTILINE
+    PUSHBUTTON      "29 Cu",IDC_ELE29,177,71,16,20,BS_MULTILINE
+    PUSHBUTTON      "30 Zn",IDC_ELE30,193,71,16,20,BS_MULTILINE
+    PUSHBUTTON      "31 Ga",IDC_ELE31,209,71,16,20,BS_MULTILINE
+    PUSHBUTTON      "49 In",IDC_ELE49,209,91,16,20,BS_MULTILINE
+    PUSHBUTTON      "13 Al",IDC_ELE13,209,51,16,20,BS_MULTILINE
+    PUSHBUTTON      "5 B",IDC_ELE05,209,31,16,20,BS_MULTILINE
+    PUSHBUTTON      "6 C",IDC_ELE06,225,31,16,20,BS_MULTILINE
+    PUSHBUTTON      "7 N",IDC_ELE07,241,31,16,20,BS_MULTILINE
+    PUSHBUTTON      "8 O",IDC_ELE08,257,31,16,20,BS_MULTILINE
+    PUSHBUTTON      "17 Cl",IDC_ELE17,273,51,16,20,BS_MULTILINE
+    PUSHBUTTON      "2  He",IDC_ELE02,289,11,16,20,BS_MULTILINE
+    PUSHBUTTON      "10 Ne",IDC_ELE10,289,31,16,20,BS_MULTILINE
+    PUSHBUTTON      "14 Si",IDC_ELE14,225,51,16,20,BS_MULTILINE
+    PUSHBUTTON      "15 P",IDC_ELE15,241,51,16,20,BS_MULTILINE
+    PUSHBUTTON      "16 S",IDC_ELE16,257,51,16,20,BS_MULTILINE
+    PUSHBUTTON      "9   F",IDC_ELE09,273,31,16,20,BS_MULTILINE
+    PUSHBUTTON      "18 Ar",IDC_ELE18,289,51,16,20,BS_MULTILINE
+    PUSHBUTTON      "35 Br",IDC_ELE35,273,71,16,20,BS_MULTILINE
+    PUSHBUTTON      "32 Ge",IDC_ELE32,225,71,16,20,BS_MULTILINE
+    PUSHBUTTON      "33 As",IDC_ELE33,241,71,16,20,BS_MULTILINE
+    PUSHBUTTON      "34 Se",IDC_ELE34,257,71,16,20,BS_MULTILINE
+    PUSHBUTTON      "36 Kr",IDC_ELE36,289,71,16,20,BS_MULTILINE
+    PUSHBUTTON      "53  I",IDC_ELE53,273,91,16,20,BS_MULTILINE
+    PUSHBUTTON      "50 Sn",IDC_ELE50,225,91,16,20,BS_MULTILINE
+    PUSHBUTTON      "51 Sb",IDC_ELE51,241,91,16,20,BS_MULTILINE
+    PUSHBUTTON      "52 Te",IDC_ELE52,257,91,16,20,BS_MULTILINE
+    PUSHBUTTON      "54 Xe",IDC_ELE54,289,91,16,20,BS_MULTILINE
+    PUSHBUTTON      "40 Zr",IDC_ELE40,65,91,16,20,BS_MULTILINE
+    PUSHBUTTON      "41 Nb",IDC_ELE41,81,91,16,20,BS_MULTILINE
+    PUSHBUTTON      "42 Mo",IDC_ELE42,97,91,16,20,BS_MULTILINE
+    PUSHBUTTON      "43 Tc",IDC_ELE43,113,91,16,20,BS_MULTILINE
+    PUSHBUTTON      "44 Ru",IDC_ELE44,129,91,16,20,BS_MULTILINE
+    PUSHBUTTON      "45 Rh",IDC_ELE45,145,91,16,20,BS_MULTILINE
+    PUSHBUTTON      "46 Pd",IDC_ELE46,161,91,16,20,BS_MULTILINE
+    PUSHBUTTON      "47 Ag",IDC_ELE47,177,91,16,20,BS_MULTILINE
+    PUSHBUTTON      "48 Cd",IDC_ELE48,193,91,16,20,BS_MULTILINE
+    PUSHBUTTON      "81 Tl",IDC_ELE81,209,111,16,20,BS_MULTILINE
+    PUSHBUTTON      "85 At",IDC_ELE85,273,111,16,20,BS_MULTILINE
+    PUSHBUTTON      "82 Pb",IDC_ELE82,225,111,16,20,BS_MULTILINE
+    PUSHBUTTON      "83 Bi",IDC_ELE83,241,111,16,20,BS_MULTILINE
+    PUSHBUTTON      "84 Po",IDC_ELE84,257,111,16,20,BS_MULTILINE
+    PUSHBUTTON      "86 Rn",IDC_ELE86,289,111,16,20,BS_MULTILINE
+    PUSHBUTTON      "72 Hf",IDC_ELE72,65,111,16,20,BS_MULTILINE
+    PUSHBUTTON      "73 Ta",IDC_ELE73,81,111,16,20,BS_MULTILINE
+    PUSHBUTTON      "74 W",IDC_ELE74,97,111,16,20,BS_MULTILINE
+    PUSHBUTTON      "75 Re",IDC_ELE75,113,111,16,20,BS_MULTILINE
+    PUSHBUTTON      "76 Os",IDC_ELE76,129,111,16,20,BS_MULTILINE
+    PUSHBUTTON      "77 Ir",IDC_ELE77,145,111,16,20,BS_MULTILINE
+    PUSHBUTTON      "78 Pt",IDC_ELE78,161,111,16,20,BS_MULTILINE
+    PUSHBUTTON      "79 Au",IDC_ELE79,177,111,16,20,BS_MULTILINE
+    PUSHBUTTON      "80 Hg",IDC_ELE80,193,111,16,20,BS_MULTILINE
+    PUSHBUTTON      "64 Gd",IDC_ELE64,129,163,16,20,BS_MULTILINE
+    PUSHBUTTON      "68 Er",IDC_ELE68,193,163,16,20,BS_MULTILINE
+    PUSHBUTTON      "65 Tb",IDC_ELE65,145,163,16,20,BS_MULTILINE
+    PUSHBUTTON      "66 Dv",IDC_ELE66,161,163,16,20,BS_MULTILINE
+    PUSHBUTTON      "67 Ho",IDC_ELE67,177,163,16,20,BS_MULTILINE
+    PUSHBUTTON      "69 Tm",IDC_ELE69,209,163,16,20,BS_MULTILINE
+    PUSHBUTTON      "90 Th",IDC_ELE90,65,131,16,20,BS_MULTILINE
+    PUSHBUTTON      "91 Pa",IDC_ELE91,81,131,16,20,BS_MULTILINE
+    PUSHBUTTON      "92 U",IDC_ELE92,97,131,16,20,BS_MULTILINE
+    PUSHBUTTON      "58 Ce",IDC_ELE58,33,163,16,20,BS_MULTILINE
+    PUSHBUTTON      "59 Pr",IDC_ELE59,49,163,16,20,BS_MULTILINE
+    PUSHBUTTON      "60 Nd",IDC_ELE60,65,163,16,20,BS_MULTILINE
+    PUSHBUTTON      "61 Pm",IDC_ELE61,81,163,16,20,BS_MULTILINE
+    PUSHBUTTON      "62 Sm",IDC_ELE62,97,163,16,20,BS_MULTILINE
+    PUSHBUTTON      "63 Eu",IDC_ELE63,113,163,16,20,BS_MULTILINE
+    PUSHBUTTON      "70 Yb",IDC_ELE70,225,163,16,20,BS_MULTILINE
+    PUSHBUTTON      "71 Lu",IDC_ELE71,241,163,16,20,BS_MULTILINE
+    PUSHBUTTON      "清除全部",IDC_CLEANALL,266,165,37,13
+END
+
+IDD_CREAWORKZONEDLG DIALOG DISCARDABLE  0, 0, 306, 230
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改产品程式"
+FONT 10, "宋体"
+BEGIN
+    CONTROL         "Tab1",IDC_WZTAB,"SysTabControl32",0x0,7,8,292,195
+    PUSHBUTTON      "接受",IDC_ACCEPT,221,207,31,13,WS_DISABLED
+    PUSHBUTTON      "保存",IDOK,183,207,31,13
+    PUSHBUTTON      "放弃",IDCANCEL,259,207,31,13
+END
+
+IDD_PUREELEINTENSITYDLG DIALOG DISCARDABLE  0, 0, 290, 240
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "纯样品强度测量"
+FONT 10, "System"
+BEGIN
+    CONTROL         "List1",IDC_PURE,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,18,19,254,85
+    GROUPBOX        "1.设置参数",IDC_STATIC,18,112,254,42
+    GROUPBOX        "2.开始测量",IDC_STATIC,18,158,254,37
+    EDITTEXT        IDC_ELENAME,28,129,20,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_LEFT,83,129,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RIGHT,141,129,20,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_HV,211,129,20,44,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Left:",IDC_STATIC,61,130,17,12
+    LTEXT           "Right:",IDC_STATIC,116,130,20,12
+    LTEXT           "管压(kV):",IDC_STATIC,174,130,31,12
+    PUSHBUTTON      "开始",IDC_START,29,173,23,12
+    PUSHBUTTON      "停止",IDC_STOP,62,173,23,12
+    PUSHBUTTON      "保存",IDC_SAVE,95,173,23,12
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,
+                    138,175,109,10
+    PUSHBUTTON      "设定",IDC_SETCFG,240,129,23,12
+    GROUPBOX        "3.保存参数",IDC_STATIC,18,200,254,29
+    PUSHBUTTON      "保存边界",IDC_SAVEPUREWIN,31,213,44,12
+    PUSHBUTTON      "保存数据",IDC_SAVEPUREDATA,95,213,44,12
+END
+
+IDD_DEFMADLG DIALOG DISCARDABLE  0, 0, 279, 225
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新建测量条件(Def.MA)"
+FONT 10, "宋体"
+BEGIN
+    LTEXT           "标签:",IDC_STATIC,24,15,21,8
+    EDITTEXT        IDC_TAG,49,13,117,12,ES_AUTOHSCROLL
+    LTEXT           "厚度模式",IDC_STATIC,85,30,35,8
+    EDITTEXT        IDC_THICKMODE,124,28,42,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Check1",IDC_ALLELEMLIST,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,45,8,8
+    LTEXT           "全元素列",IDC_STATIC,29,45,34,9
+    CONTROL         "Check1",IDC_ISMQ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    124,45,8,8
+    LTEXT           "显示mq",IDC_STATIC,138,45,28,9
+    CONTROL         "Tree1",IDC_LAYERTREE,"SysTreeView32",WS_BORDER | 
+                    WS_TABSTOP,17,57,148,119
+    GROUPBOX        "高压(kV)",IDC_STATIC,171,8,100,29
+    CONTROL         "Radio1",IDC_HV50KV,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,177,22,8,8
+    CONTROL         "Radio1",IDC_HV40KV,"Button",BS_AUTORADIOBUTTON,210,22,8,
+                    8
+    CONTROL         "Radio1",IDC_HV30KV,"Button",BS_AUTORADIOBUTTON,241,22,8,
+                    8
+    CONTROL         "Radio1",IDC_FILTER_NI,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,176,56,8,8
+    CONTROL         "Radio1",IDC_FILTER_NONE,"Button",BS_AUTORADIOBUTTON,211,
+                    56,8,8
+    CONTROL         "Radio1",IDC_FILTER_AL,"Button",BS_AUTORADIOBUTTON,244,
+                    56,8,8
+    CONTROL         "Check1",IDC_BECMSCALE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,173,78,8,8
+    CONTROL         "Check1",IDC_BECMOFFSET,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,173,91,8,8
+    CONTROL         "Check1",IDC_BEFILTER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,173,104,8,8
+    CONTROL         "Check1",IDC_BEMEASURE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,173,117,8,8
+    EDITTEXT        IDC_COMMENT,171,142,99,34,ES_AUTOHSCROLL
+    PUSHBUTTON      "保存",IDC_SAVE,196,198,31,12
+    PUSHBUTTON      "取消",IDC_CANCL,236,198,31,12
+    LTEXT           "30",IDC_STATIC,250,22,11,8
+    PUSHBUTTON      "修改",IDC_MODIFY,17,183,38,12
+    PUSHBUTTON      "校正设定",IDC_CAILB,17,198,38,12
+    PUSHBUTTON      "新镀层",IDC_NEW,71,183,38,12
+    PUSHBUTTON      "补偿光谱",IDC_CMPSA,126,183,38,12
+    GROUPBOX        "滤光片",IDC_STATIC,171,43,100,29
+    LTEXT           "40",IDC_STATIC,219,22,11,8
+    LTEXT           "50",IDC_STATIC,186,22,11,8
+    LTEXT           "Ni",IDC_STATIC,185,56,11,8
+    LTEXT           "--",IDC_STATIC,220,56,11,8
+    LTEXT           "Al",IDC_STATIC,253,56,11,8
+    LTEXT           "比例补偿方法",IDC_STATIC,182,78,66,9
+    LTEXT           "偏移补偿",IDC_STATIC,182,91,66,9
+    LTEXT           "测量元素",IDC_STATIC,182,117,66,9
+    LTEXT           "滤波器",IDC_STATIC,182,104,66,9
+    LTEXT           "备注:",IDC_STATIC,171,132,32,9
+END
+
+IDD_TAB_DEFPRODUCT DIALOG DISCARDABLE  0, 0, 332, 196
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Radio1",IDC_CONTENTUNIT0,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,124,79,9,7
+    CONTROL         "Radio1",IDC_CONTENTUNIT1,"Button",BS_AUTORADIOBUTTON,
+                    124,91,9,7
+    CONTROL         "Radio1",IDC_CONTENTUNIT2,"Button",BS_AUTORADIOBUTTON,
+                    124,103,9,7
+    CONTROL         "Radio1",IDC_CONTENTUNIT3,"Button",BS_AUTORADIOBUTTON,
+                    124,115,9,7
+    CONTROL         "Radio1",IDC_CONTENTUNIT4,"Button",BS_AUTORADIOBUTTON,
+                    124,127,9,7
+    CONTROL         "Radio1",IDC_THICKUNIT0,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,231,79,9,7
+    CONTROL         "Radio1",IDC_THICKUNIT1,"Button",BS_AUTORADIOBUTTON,231,
+                    91,9,7
+    CONTROL         "Radio1",IDC_THICKUNIT2,"Button",BS_AUTORADIOBUTTON,231,
+                    103,9,7
+    CONTROL         "Radio1",IDC_THICKUNIT3,"Button",BS_AUTORADIOBUTTON,231,
+                    115,9,7
+    CONTROL         "Radio1",IDC_THICKUNIT4,"Button",BS_AUTORADIOBUTTON,231,
+                    128,9,7
+    EDITTEXT        IDC_TAG,98,9,82,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SAMPLETIME,72,69,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REPEAT,72,86,30,12,ES_AUTOHSCROLL
+    LTEXT           "编号",IDC_STATIC,13,11,16,8
+    EDITTEXT        IDC_INDEX,30,9,19,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "产品程式",IDC_STATIC,64,11,33,8
+    GROUPBOX        "",IDC_STATIC,15,23,301,40
+    LTEXT           "修改",IDC_STATIC,21,33,16,8
+    RTEXT           "最后测量",IDC_STATIC,166,33,32,8
+    RTEXT           "归一化/调校",IDC_STATIC,153,47,45,8
+    EDITTEXT        IDC_MODIFYTIME,40,31,99,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_CORRECTTIME,203,46,99,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_MEASURETIME,203,31,99,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    RTEXT           "测量时间(秒)=",IDC_STATIC,13,71,55,8
+    RTEXT           "测量次数=",IDC_STATIC,23,88,45,8
+    GROUPBOX        "浓度单位",IDC_STATIC,120,66,92,76
+    GROUPBOX        "厚度单位",IDC_STATIC,224,66,92,76
+    GROUPBOX        "Static",IDC_STATIC,13,150,155,30
+    LTEXT           "%",IDC_STATIC,136,78,36,8
+    LTEXT           "o/oo",IDC_STATIC,136,90,36,8
+    LTEXT           "ppm",IDC_STATIC,136,102,36,8
+    LTEXT           "Karat",IDC_STATIC,136,114,36,8
+    LTEXT           "自定义",IDC_STATIC,136,127,36,8
+    LTEXT           "μm",IDC_STATIC,244,78,36,8
+    LTEXT           "nm",IDC_STATIC,244,90,36,8
+    LTEXT           "mils",IDC_STATIC,244,102,36,8
+    LTEXT           "μ""",IDC_STATIC,244,114,36,8
+    LTEXT           "自定义",IDC_STATIC,244,127,36,8
+    COMBOBOX        IDC_PRECISION,270,155,46,57,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "显示分辨率",IDC_STATIC,224,157,40,9
+END
+
+IDD_TAB_DEFAPP DIALOG DISCARDABLE  0, 0, 332, 196
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "编号",IDC_STATIC,15,12,16,8
+    EDITTEXT        IDC_INDEX,32,10,19,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "产品程式",IDC_STATIC,66,12,33,8
+    EDITTEXT        IDC_TAG,100,10,82,12,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "",IDC_STATIC,15,31,99,50
+    RTEXT           "调校时间(秒)",IDC_STATIC,22,44,48,10
+    RTEXT           "调校测量次数",IDC_STATIC,22,63,48,10
+    EDITTEXT        IDC_ADJUSTTIME,74,43,33,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ADJUSTREPEAT,74,62,33,12,ES_AUTOHSCROLL
+    CTEXT           "备忘",IDC_STATIC,189,35,48,10
+    EDITTEXT        IDC_APPNOTE,123,49,180,94,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "mq_MAX",IDC_STATIC,22,87,48,10
+    EDITTEXT        IDC_MQMAX,74,85,33,12,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "阳极电流",IDC_STATIC,22,121,48,10
+    EDITTEXT        IDC_CURRENT,74,120,33,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "准直器",IDC_COLLSELECT,34,138,36,14
+    EDITTEXT        IDC_COLLIMATOR,74,139,33,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Def.MA",IDC_DEFMA,161,160,46,14
+    PUSHBUTTON      "标样片",IDC_STD,229,160,46,14
+    RTEXT           "自动计算电流",IDC_STATIC,22,104,48,10
+    CONTROL         "Check1",IDC_AUTOCURRENT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,74,103,12,12
+END
+
+IDD_TAB_DEFUNIT DIALOG DISCARDABLE  0, 0, 332, 196
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Radio1",IDC_VARIABLE0,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,29,39,9,9
+    CONTROL         "Radio1",IDC_VARIABLE1,"Button",BS_AUTORADIOBUTTON,29,53,
+                    9,9
+    CONTROL         "Radio1",IDC_STYLED0,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,185,35,9,9
+    CONTROL         "Radio1",IDC_STYLED1,"Button",BS_AUTORADIOBUTTON,185,49,
+                    9,9
+    CONTROL         "Radio1",IDC_STYLED2,"Button",BS_AUTORADIOBUTTON,185,63,
+                    9,9
+    GROUPBOX        "设定数据分组",IDC_STATIC,20,24,144,47
+    GROUPBOX        "表达方式",IDC_STATIC,174,24,132,57
+    GROUPBOX        "公差值",IDC_STATIC,107,92,199,87,BS_CENTER
+    CTEXT           "显示",IDC_STATIC,48,86,22,9
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,20,97,76,82
+    LTEXT           "可变",IDC_STATIC,42,39,28,9
+    LTEXT           "固定",IDC_STATIC,42,53,28,9
+    LTEXT           "大数字",IDC_STATIC,198,35,28,9
+    LTEXT           "数表",IDC_STATIC,198,49,28,9
+    LTEXT           "SPC",IDC_STATIC,198,63,28,9
+    RTEXT           "数据组大小:",IDC_STATIC,77,53,48,9
+    EDITTEXT        IDC_ARRAYSIZE,127,52,25,12,ES_AUTOHSCROLL
+END
+
+IDD_CONFLAYERDLG DIALOG DISCARDABLE  0, 0, 274, 231
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "镀层属性"
+FONT 10, "宋体"
+BEGIN
+    CONTROL         "Radio1",IDC_THICKMODE0,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,21,20,8,8
+    CONTROL         "Radio1",IDC_THICKMODE1,"Button",BS_AUTORADIOBUTTON,21,
+                    30,8,8
+    CONTROL         "Radio1",IDC_THICKMODE2,"Button",BS_AUTORADIOBUTTON,21,
+                    41,8,8
+    CONTROL         "Radio1",IDC_CONTENTMODE0,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,21,63,8,8
+    CONTROL         "Radio1",IDC_CONTENTMODE1,"Button",BS_AUTORADIOBUTTON,21,
+                    74,8,8
+    CONTROL         "Radio1",IDC_CONTENTMODE2,"Button",BS_AUTORADIOBUTTON,21,
+                    85,8,8
+    DEFPUSHBUTTON   "OK",IDOK,186,205,34,13
+    PUSHBUTTON      "Cancel",IDCANCEL,228,205,34,13
+    GROUPBOX        "厚度",IDC_STATIC,16,8,242,43
+    GROUPBOX        "含量",IDC_STATIC,16,52,242,43
+    LTEXT           "分析镀层厚度",IDC_STATIC,31,19,82,8
+    LTEXT           "镀层厚度将被更正",IDC_STATIC,31,29,82,8
+    LTEXT           "镀层厚度已知",IDC_STATIC,31,40,82,8
+    LTEXT           "分析镀层成份",IDC_STATIC,32,62,82,8
+    LTEXT           "镀层成份将被更正",IDC_STATIC,32,73,82,8
+    LTEXT           "镀层成份已知",IDC_STATIC,32,84,82,8
+    CONTROL         "List1",IDC_ELEMLIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,16,99,146,57
+    PUSHBUTTON      "元素+",IDC_ADD,16,160,24,11
+    PUSHBUTTON      "替换=",IDC_REPLACE,56,160,24,11
+    PUSHBUTTON      "删除-",IDC_DELETE,96,160,24,11
+    PUSHBUTTON      "100%",IDC_RECONTENT,136,160,24,11
+    COMBOBOX        IDC_ELEMCOMBO,16,184,32,118,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ELEMCONTENT,61,184,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ELEMDENSITY,95,184,22,12,ES_AUTOHSCROLL
+    RTEXT           "镀层密度(g/cm^3)",IDC_STATIC,165,103,62,9
+    RTEXT           "镀层厚度(μm)",IDC_STATIC,166,119,61,9
+    EDITTEXT        IDC_DENSITY,230,102,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_THICKNESS,230,118,29,12,ES_AUTOHSCROLL
+    RTEXT           "%",IDC_STATIC,50,186,8,9
+    RTEXT           "ρ",IDC_STATIC,87,186,8,9
+    RTEXT           "镀层是否饱和(无限厚)",IDC_STATIC,166,136,77,9
+    CONTROL         "",IDC_SATURATED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    247,136,10,9
+    CONTROL         "",IDC_CALCULATED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    162,186,8,8
+    RTEXT           "参与计算:",IDC_STATIC,125,186,34,9
+    GROUPBOX        "",IDC_STATIC,13,175,165,43
+    RTEXT           "L",IDC_STATIC,49,203,8,8
+    RTEXT           "R",IDC_STATIC,84,203,8,9
+    EDITTEXT        IDC_ELEMLEFT,60,202,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ELEMRIGHT,95,202,22,12,ES_AUTOHSCROLL
+END
+
+IDD_WORKZONELISTDLG DIALOG DISCARDABLE  0, 0, 299, 239
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "请输入工作区标签"
+FONT 10, "宋体"
+BEGIN
+    EDITTEXT        IDC_NAME,178,14,104,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,171,211,50,14
+    PUSHBUTTON      "放弃",IDCANCEL,231,211,50,14
+    LTEXT           "工作区名称",IDC_STATIC,137,16,37,9
+    CONTROL         "List1",IDC_WZLIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,16,32,266,170
+END
+
+IDD_TIMETICKDLG DIALOG DISCARDABLE  0, 0, 129, 80
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "收谱计时"
+FONT 11, "宋体"
+BEGIN
+    PUSHBUTTON      "暂停",IDCANCEL,48,63,31,12
+    CONTROL         "",IDC_SEC,"Button",BS_OWNERDRAW | BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | WS_TABSTOP,36,7,54,38
+    CTEXT           "等待收谱...",IDC_STATUS,24,49,81,9
+END
+
+IDD_DEF_SAMPLE_DLG DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "定义标样"
+FONT 11, "宋体"
+BEGIN
+END
+
+IDD_DEF_CONDITION_DLG DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "定义测量条件"
+FONT 11, "宋体"
+BEGIN
+END
+
+IDD_DEFMALISTDLG DIALOG DISCARDABLE  0, 0, 299, 241
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择一个Def.MA"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,172,214,50,14
+    PUSHBUTTON      "取消",IDCANCEL,230,214,50,14
+    CONTROL         "List1",IDC_DEFMALIST,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,16,32,266,170
+END
+
+CG_IDD_PROGRESS DIALOG DISCARDABLE  0, 0, 222, 65
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 10, "宋体"
+BEGIN
+    PUSHBUTTON      "取消",IDCANCEL,173,40,39,14
+    CONTROL         "Progress1",CG_IDC_PROGDLG_PROGRESS,"msctls_progress32",
+                    WS_BORDER,13,28,199,9
+    LTEXT           "",CG_IDC_PROGDLG_STATUS,13,12,199,9
+END
+
+IDD_STDSAMPLEDLG DIALOG DISCARDABLE  0, 0, 315, 219
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "输入标样读数"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,201,196,41,12
+    PUSHBUTTON      "取消",IDCANCEL,261,196,41,12
+    CONTROL         "List1",IDC_STDLIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,14,20,287,152
+    DEFPUSHBUTTON   "插入/修改",ID_EDIT_STD,21,178,41,12
+    DEFPUSHBUTTON   "插入",ID_INSERT_STD,81,178,41,12,WS_DISABLED
+    DEFPUSHBUTTON   "删除",ID_DELETE_STD,141,178,41,12
+    DEFPUSHBUTTON   "删除所有",ID_DELETE_ALL,201,178,41,12,WS_DISABLED
+    LTEXT           "单位: um",IDC_STATIC,24,199,45,8
+    DEFPUSHBUTTON   "Load File",ID_OPEN_FILE,220,6,37,10,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    DEFPUSHBUTTON   "Save File",ID_SAVE_FILE,262,6,37,10,NOT WS_VISIBLE | 
+                    WS_DISABLED
+END
+
+IDD_CONFSAMPLEDLG DIALOG DISCARDABLE  0, 0, 167, 135
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Standard Sample"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,83,112,33,11
+    PUSHBUTTON      "Cancel",IDCANCEL,123,112,33,11
+    CONTROL         "",IDC_STDGRID,"{B72C55ED-9AB0-433E-99D1-B66A93AE2F07}",
+                    WS_TABSTOP,9,10,147,96
+    RTEXT           "标样名",IDC_STATIC,9,113,24,10
+    EDITTEXT        IDC_STD_TAG,36,112,34,12,ES_AUTOHSCROLL
+END
+
+IDD_COLLDLG DIALOG DISCARDABLE  0, 0, 186, 126
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "选择准直器"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,90,100,38,13
+    PUSHBUTTON      "Cancel",IDCANCEL,135,100,38,13
+    GROUPBOX        "准直器",IDC_STATIC,13,12,119,68
+    CONTROL         "Radio1",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,27,24,8,
+                    9
+    CONTROL         "Radio1",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,27,38,8,
+                    9
+    CONTROL         "Radio1",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,27,52,8,
+                    9
+    CONTROL         "Radio1",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,27,66,8,
+                    9
+    LTEXT           "1= 1.0",IDC_STATIC,42,24,51,8
+    LTEXT           "2= 2.0",IDC_STATIC,42,38,51,8
+    LTEXT           "3= 3.0",IDC_STATIC,42,52,51,8
+    LTEXT           "4= 3.0+",IDC_STATIC,42,66,51,8
+END
+
+IDD_SET_MEASHEARD_DLG DIALOG DISCARDABLE  0, 0, 219, 229
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "测量参数设置"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,136,203,30,12
+    PUSHBUTTON      "Cancel",IDCANCEL,174,203,30,12
+    GROUPBOX        "高压电源",IDC_STATIC,12,13,112,92
+    GROUPBOX        "探测器电压(V)",IDC_STATIC,135,13,70,48
+    GROUPBOX        "能量刻度",IDC_STATIC,135,72,70,102
+    GROUPBOX        "X光管参数",IDC_STATIC,12,110,112,46
+    LTEXT           "电压(HV)",IDC_STATIC,46,25,31,8
+    LTEXT           "电流(MA)",IDC_STATIC,84,25,31,8
+    PUSHBUTTON      "30",IDC_BUTTON1,17,40,21,11
+    PUSHBUTTON      "40",IDC_BUTTON2,17,61,21,11
+    PUSHBUTTON      "50",IDC_BUTTON3,17,82,21,11
+    EDITTEXT        IDC_HV30,49,41,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HV40,48,62,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HV50,48,83,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HI30,86,41,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HI40,86,62,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HI50,86,83,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_H2500,164,25,27,12,ES_AUTOHSCROLL
+    RTEXT           "截距",IDC_STATIC,141,90,19,10
+    RTEXT           "斜率",IDC_STATIC,141,108,19,10
+    RTEXT           "C1",IDC_STATIC,141,126,19,10
+    RTEXT           "C2",IDC_STATIC,141,144,19,10
+    EDITTEXT        IDC_ENGB,164,88,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ENGK,164,106,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ENGC1,164,124,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ENGC2,164,142,24,12,ES_AUTOHSCROLL
+    RTEXT           "靶材",IDC_STATIC,20,125,17,9
+    RTEXT           "发散角",IDC_STATIC,66,125,23,9
+    RTEXT           "入射角",IDC_STATIC,14,142,23,9
+    RTEXT           "出射角",IDC_STATIC,66,142,23,9
+    GROUPBOX        "滤光片及Be窗(mm)厚度",IDC_STATIC,12,162,112,53
+    EDITTEXT        IDC_BETHICK,97,178,22,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Al",IDC_BUTTON4,17,178,21,11
+    PUSHBUTTON      "Ni",IDC_BUTTON6,17,197,21,11
+    EDITTEXT        IDC_FLTAL,42,178,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FLTNI,42,197,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TAKEOFF,94,123,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMGERMENT,94,140,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TARGET,41,123,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INCIDENT,41,140,18,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Be窗",IDC_BUTTON5,72,179,21,11
+    RTEXT           "当前",IDC_STATIC,142,27,17,9
+    EDITTEXT        IDC_H2500STEP,164,42,27,12,ES_AUTOHSCROLL
+    RTEXT           "V/Chs",IDC_STATIC,137,42,22,9
+END
+
+IDD_SET_XYZ_DLG DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+END
+
+IDD_SET_CROSS_DLG DIALOG DISCARDABLE  0, 0, 243, 234
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,135,203,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,186,203,50,14
+END
+
+IDD_ENERGY_CALIB_DLG DIALOG DISCARDABLE  0, 0, 274, 191
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "能量刻度校准"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,175,162,35,14
+    PUSHBUTTON      "Cancel",IDCANCEL,221,162,35,14
+    GROUPBOX        "上一次刻度校准",IDC_STATIC,17,17,241,46
+    RTEXT           "截距",IDC_STATIC,23,35,25,11
+    RTEXT           "斜率",IDC_STATIC,95,35,25,11
+    RTEXT           "U=",IDC_STATIC,167,35,25,11
+    EDITTEXT        IDC_LAST_B,55,34,31,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_LAST_K,127,34,31,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_LAST_H2500,199,34,31,12,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "",IDC_CALIBTIP,17,76,241,77
+    PUSHBUTTON      "开始测量",IDC_START,25,90,63,19
+    RTEXT           "U(当前)=",IDC_STATIC,184,128,33,11
+    EDITTEXT        IDC_CURR_H2500,220,127,31,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    RTEXT           "Ag峰位(当前)=",IDC_STATIC,94,128,51,11
+    EDITTEXT        IDC_CURR_PEAK,149,127,31,12,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "Vol/Chs",IDC_STATIC,20,128,33,11
+    EDITTEXT        IDC_SCALE,57,127,31,12,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "当前调整次数",IDC_STATIC,97,95,48,11
+    EDITTEXT        IDC_CALIB_TIME,149,94,31,12,ES_AUTOHSCROLL | WS_DISABLED
+END
+
+IDD_ENERGY_CALIB_DLG2 DIALOG DISCARDABLE  0, 0, 328, 219
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "能量刻度校准(手动)"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,244,19,29,12
+    PUSHBUTTON      "Cancel",IDCANCEL,281,19,29,12
+    GROUPBOX        "上一次刻度校准",IDC_STATIC,15,14,211,38
+    RTEXT           "截距",IDC_STATIC,20,29,22,9
+    RTEXT           "斜率",IDC_STATIC,83,29,22,9
+    RTEXT           "U=",IDC_STATIC,146,29,22,9
+    EDITTEXT        IDC_LAST_B,48,28,27,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_LAST_K,111,28,27,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_LAST_H2500,174,28,27,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "开始测量",IDC_START,22,73,55,16
+    RTEXT           "U(当前)=",IDC_STATIC,111,104,29,9
+    EDITTEXT        IDC_CURR_H2500,143,103,27,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    RTEXT           "Ag峰位(当前)=",IDC_STATIC,24,104,45,9
+    EDITTEXT        IDC_CURR_PEAK,72,103,27,12,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "Ag标定",IDC_STATIC,15,60,211,70
+    GROUPBOX        "Cu标定",IDC_STATIC,17,141,208,63
+    LTEXT           "H2500调整",IDC_STATIC,105,77,40,11
+    EDITTEXT        IDC_CURR_H2501,147,76,27,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "更改",IDC_BUTTON2,180,77,25,11
+END
+
+IDD_MDICALIBVIEW_FORM DIALOGEX 0, 0, 344, 236
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 11, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "开始测量",IDC_CALIB_START,229,190,39,21,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "终止测量",IDC_CALIB_STOP,286,190,39,21,0,
+                    WS_EX_STATICEDGE
+    CONTROL         "",IDC_CALIBVIDEO,"Static",SS_GRAYFRAME,228,48,93,92
+    CONTROL         "工作曲线编号:",IDC_CALIBTITLE,"Button",BS_OWNERDRAW | 
+                    BS_LEFT | BS_FLAT | WS_TABSTOP,25,12,295,27,
+                    WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    LTEXT           "Result",IDC_CALIBLASTRESULT,230,154,91,19
+    CONTROL         "List1",IDC_CALIBSTATISTIC_LIST,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,25,48,184,78
+    CONTROL         "List1",IDC_CALIBARRAY_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,25,131,184,78
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "TMeter 镀层测厚分析软件\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "TMeter\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2012\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "TMeter.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "TMeter 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MDIMEASUREVIEW_ZH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 337
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_SPECTRUMDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_CONDITIONMONITORDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 344
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_MDISPECTRUMVIEW_ZH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 337
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_SETZONE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 121
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 73
+    END
+
+    IDD_STBTESTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 352
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 249
+    END
+
+    IDD_PERIODICTABLEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 316
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 188
+    END
+
+    IDD_CREAWORKZONEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 299
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_PUREELEINTENSITYDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 233
+    END
+
+    IDD_DEFMADLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_TAB_DEFPRODUCT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 325
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_TAB_DEFAPP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 325
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_TAB_DEFUNIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 325
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_CONFLAYERDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+
+    IDD_WORKZONELISTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 292
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 232
+    END
+
+    IDD_TIMETICKDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 127
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_DEF_SAMPLE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_DEF_CONDITION_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_DEFMALISTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 292
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 234
+    END
+
+    CG_IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_STDSAMPLEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 212
+    END
+
+    IDD_CONFSAMPLEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 162
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_COLLDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_SET_MEASHEARD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 222
+    END
+
+    IDD_SET_XYZ_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_SET_CROSS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 236
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_ENERGY_CALIB_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_ENERGY_CALIB_DLG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 321
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 212
+    END
+
+    IDD_MDICALIBVIEW_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 337
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 229
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CONFSAMPLEDLG DLGINIT
+BEGIN
+    IDC_STDGRID, 0x376, 124, 0
+0x0000, 0x0000, 0xb293, 0x0000, 0x0078, 0x0000, 0x0003, 0x0008, 0xf20b, 
+0x4757, 0x0020, 0x0000, 0x005f, 0x0065, 0x0078, 0x0074, 0x0065, 0x006e, 
+0x0074, 0x0078, 0x1e63, 0x0000, 0x0003, 0x0008, 0xf20a, 0x4757, 0x0020, 
+0x0000, 0x005f, 0x0065, 0x0078, 0x0074, 0x0065, 0x006e, 0x0074, 0x0079, 
+0x13d8, 0x0000, 0x0003, 0x0004, 0xb1f2, 0xbc0d, 0x0018, 0x0000, 0x0063, 
+0x006f, 0x006c, 0x0073, 0x0005, 0x0000, 0x0003, 0x0004, 0xd972, 0xbc0e, 
+0xffa8, 0xffff, 0x0072, 0x006f, 0x0077, 0x0073, 0x001e, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "TMeter"
+    IDR_TMETERTYPE          "\nTMeter\nTMeter\n\n\nTMeter.Document\nTMeter Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "TMeter"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "为活动文档打开另一个窗口\n新建窗口"
+    ID_WINDOW_ARRANGE       "将图标排列在窗口底部\n排列图标"
+    ID_WINDOW_CASCADE       "排列窗口成相互重叠\n层叠窗口"
+    ID_WINDOW_TILE_HORZ     "排列窗口成互不重叠\n平铺窗口"
+    ID_WINDOW_TILE_VERT     "排列窗口成互不重叠\n平铺窗口"
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+    AFX_IDS_MDICHILD        "激活该窗口"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+    IDS_SYSPARAMHASBEENSENT "参数已设定!"
+    IDS_INFO_OCUUPIED_INFO  "仪器已被占用, 请先关闭下列过程: "
+    IDS_INFO_OCUUPY_STBTEST "稳定性测试"
+    IDS_INFO_OCUUPY_MEASURE "测量"
+    IDS_INFO_OCUUPY_SPECTRUM "光谱"
+    IDS_INFO_OCUUPY_STBWARN "正在进行稳定性测试, 确认退出?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENU_OPENSPECVIEW    "切换到光谱分析界面\n光谱界面"
+    ID_MENU_OPENSPEC        "打开光谱文件"
+    ID_MENU_SAVESPEC        "将光谱文件保存至磁盘"
+    ID_MENU_EXITSPEC        "切换到测量界面\n测量界面"
+    ID_MENU_AUTOSCALE       "自动调节谱型显示比例"
+    ID_MENU_XEXTEND         "X轴放大"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENU_AUTOSORT        "打开/关闭自动分组"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENU_XCONTRACT       "X轴缩小"
+    ID_MENU_YEXTEND         "Y轴放大"
+    ID_MENU_YCONTRACT       "Y轴缩小"
+    ID_MENU_FILL            "填充光谱图形"
+    ID_MENU_SETLINE         "感应区设定"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENU_PERIODICTABLE   "打开元素周期表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MDICALIBVIEW_TMPL   "\nMdiCalibView\nMdiCal\nMdiCal Files (*.mdi)\n.mdi\nMdiCalibView.Document\nMdiCal Document"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\TMeter.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

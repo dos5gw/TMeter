@@ -1,0 +1,12 @@
+CALIBRATION FILE: 
+Date of Creation: 09/03/12
+Condition File: None
+Sample Library: None
+No. Standards: N/A
+Calibration Status: calibrated    
+Standard List: N/A
+
+Calibration Coefficients: 2
+    Line CC  C0           C1           C2           C3
+FE  Ka   1   0.0000e+000  2.0375e+000  0.0000e+000  0.0000e+000
+NI  Ka   1   0.0000e+000  2.2501e+000  0.0000e+000  0.0000e+000

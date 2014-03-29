@@ -1,0 +1,17 @@
+
+# VS dir #
+#####################
+Debug\
+Log\
+SpecData\
+*.bmp
+*.ico
+*.spec
+*.dll
+*.exe
+*.csv
+*.rar
+*.zip
+*.DAT
+*.lib
+*.ocx
